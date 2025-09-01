@@ -1,6 +1,6 @@
 {
   "name": "simple-reader-mode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight alternative to Mozilla's Readability library for extracting readable content from web pages",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
