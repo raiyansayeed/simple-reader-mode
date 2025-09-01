@@ -1,0 +1,57 @@
+{
+  "name": "simple-reader-mode",
+  "version": "0.1.0",
+  "description": "A lightweight alternative to Mozilla's Readability library for extracting readable content from web pages",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "browser": "./dist/index.umd.js",
+      "react-native": "./dist/index.esm.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "readability",
+    "reader-mode",
+    "content-extraction",
+    "html-parser",
+    "react-native",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/simple-reader-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/simple-reader-mode/issues"
+  },
+  "homepage": "https://github.com/yourusername/simple-reader-mode#readme",
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@types/node": "^22.10.2",
+    "rollup": "^4.29.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.14.4"
+}
