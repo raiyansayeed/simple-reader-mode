@@ -2,6 +2,8 @@
 
 A lightweight TypeScript library for extracting readable content from web pages. This is a simple alternative to Mozilla's Readability library without dependency on jsdom, making it suitable for use in alternative JavaScript environments like React Native.
 
+![Reader mode example](./docs/assets/reader_mode_example.png)
+
 ## Features
 
 - 🚀 Lightweight and fast
